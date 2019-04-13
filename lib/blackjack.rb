@@ -56,6 +56,11 @@ def runner
   hit?
   display_card_total
 end
+if input == 'h'
+  deal_card
+  elsif input == 's'
+  hit?
+end
 end_game
 end
     
