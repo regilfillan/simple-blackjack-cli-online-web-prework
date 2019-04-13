@@ -28,7 +28,7 @@ def initial_round
   first_round
 end
 
-def hit?(current_card_total)
+def hit?(card_total)
   prompt_user
   input= get_user_input
   until input == 's' || input == 'h'
@@ -37,9 +37,9 @@ def hit?(current_card_total)
   input = get_user_input
 end
   if input == 's'
-    current_card_total
+    card_total
   elsif input == 'h'
-    current_card_total += deal_card
+    card_total += deal_card
   end
 end
 
